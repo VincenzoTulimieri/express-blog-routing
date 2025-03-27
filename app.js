@@ -3,18 +3,14 @@ const express = require('express');
 const app = express();
 const port = 2000;
 
-// importazione dati
-const posts = require('./data/posts.js')
+// routers
+const postsRouter = require('./routers/posts.js')
 
-app.get('/posts',(req,res) => {
-    res.json(posts)
-})
+// accessibile al client
+app.use(express.static('public'))
 
-app.get('/', (req,res)=>{
-    res.send('Server del mio blog')
-})
-
-
+// richiamo del router
+app.use('/posts', postsRouter)
 
 // express in attesa
 app.listen(port, ()=>{
