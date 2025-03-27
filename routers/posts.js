@@ -12,7 +12,10 @@ router.get('/', (req,res)=>{
 
 // show
 router.get('/:title',(req,res) => {
-    
+    const currentTitle = req.params.title
+    console.log(currentTitle)
+    const currentPost = posts.find(post => post.title === currentTitle)
+    res.json(currentPost)
 })
 
 // store
