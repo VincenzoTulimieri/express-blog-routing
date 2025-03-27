@@ -1,0 +1,20 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "dev":"node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincenzoTulimieri/express-blog-routing.git"
+  },
+  "author": "Vincenzo Tulimieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincenzoTulimieri/express-blog-routing/issues"
+  },
+  "homepage": "https://github.com/VincenzoTulimieri/express-blog-routing#readme",
+  "description": ""
+}
