@@ -11,10 +11,10 @@ router.get('/', (req,res)=>{
 })
 
 // show
-router.get('/:title',(req,res) => {
-    const currentTitle = req.params.title
-    console.log(currentTitle)
-    const currentPost = posts.find(post => post.title === currentTitle)
+router.get('/:id',(req,res) => {
+    const currentId = req.params.id
+    console.log(currentId)
+    const currentPost = posts.find(post => post.slug === currentId)
     res.json(currentPost)
 })
 
