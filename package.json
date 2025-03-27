@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"node app.js",
-    "dev":"node --watch app.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
     "url": "https://github.com/VincenzoTulimieri/express-blog-routing/issues"
   },
   "homepage": "https://github.com/VincenzoTulimieri/express-blog-routing#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
