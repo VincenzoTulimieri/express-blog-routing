@@ -24,17 +24,17 @@ router.post('/',(req,res) => {
 })
 
 // update
-router.put('/:title',(req,res) => {
+router.put('/:id',(req,res) => {
     res.send('modifica di un post')
 })
 
 // modify
-router.patch('/:title',(req,res) => {
+router.patch('/:id',(req,res) => {
     res.send('modifica di parte di un post')
 })
 
 // destroy
-router.delete('/:title',(req,res) => {
+router.delete('/:id',(req,res) => {
     res.send('ccancellazione di un post post')
 })
 
